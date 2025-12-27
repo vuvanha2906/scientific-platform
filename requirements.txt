@@ -1,0 +1,13 @@
+# Web Framework & Async
+fastapi>=0.100.0
+uvicorn[standard]>=0.23.0
+pydantic>=2.0.0
+
+# Chemistry Core
+# Note: This installs the pre-compiled binary for RDKit
+rdkit>=2023.09.1
+
+# Utilities
+uuid
+typing-extensions
+
