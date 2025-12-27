@@ -93,12 +93,15 @@ $$ Score = QED - (0.1 \times Violations) $$
 
 **1. Start a New Run (POST)**
 
-Initiate a workflow with Aspirin as the seed molecule.
+Example (Using Aspirin, Ethoxybenzene,Acetanilide, and Ethylamine as a seed. You can try more molecules as SMILES from one or more seed SMILES) 
 ```
 curl -X POST "[http://127.0.0.1:8000/runs](http://127.0.0.1:8000/runs)" \
      -H "Content-Type: application/json" \
      -d '{
-           "initial_smiles": ["CC(=O)OC1=CC=CC=C1C(=O)O"],
+           "initial_smiles": ["CCOc1ccc(CCNC(=O)C)cc1",
+                             "c1ccccc1C(=O)NC",                
+                             "CCN(CC)CCOC1=CC=CC=C1",
+                             "CC(=O)OC1=CC=CC=C1C(=O)O"],     
            "num_rounds": 3,
            "num_generations_per_seed": 5,
            "top_k": 2,
