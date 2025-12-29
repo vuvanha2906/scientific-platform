@@ -53,7 +53,7 @@ pip install -r requirements.txt
 ```bash
 uvicorn app.main:app --reload
 ```
-The API will be available at http://127.0.0.1:8000.
+The API will be available at http://127.0.0.1:8000/docs.
 
 ## 🧪 Scientific Logic
 
